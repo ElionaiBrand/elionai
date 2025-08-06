@@ -3,90 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elionai Brand</title>
+  <title>Elionai Brand 🌟</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      background: #f5f5f5;
       margin: 0;
       padding: 0;
-    }
-
-    header {
-      background-color: #fff;
-      padding: 20px 40px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-
-    header h1 {
+    header {
+      background: #fff;
+      padding: 30px 20px 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 36px;
       margin: 0;
-      font-size: 32px;
     }
-
-    .buttons {
+    p {
+      font-size: 18px;
       margin-top: 10px;
     }
-
-    .buttons a {
-      text-decoration: none;
-      padding: 12px 20px;
-      margin: 0 10px;
-      border-radius: 5px;
-      font-weight: bold;
+    .button-container {
+      margin-top: 20px;
     }
-
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+    }
     .cashapp {
       background-color: #00d632;
-      color: white;
     }
-
     .redbubble {
       background-color: #e60023;
-      color: white;
     }
-
-    .product-grid {
+    .products {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 40px 20px;
+      margin-top: 40px;
+      padding: 20px;
     }
-
-    .product {
-      background-color: white;
-      margin: 20px;
-      width: 300px;
+    .product-card {
+      background: white;
+      border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      overflow: hidden;
-      text-align: center;
+      width: 300px;
+      margin: 20px;
+      padding: 15px;
     }
-
-    .product img {
+    .product-card img {
       width: 100%;
       height: auto;
+      border-radius: 5px;
     }
-
-    .product h3 {
-      padding: 10px 0;
-      margin: 0;
+    .product-title {
+      font-weight: bold;
+      margin: 15px 0 5px;
     }
-
-    .product a {
-      display: block;
+    .product-link {
+      display: inline-block;
+      margin-top: 10px;
       background-color: #333;
       color: white;
-      padding: 12px;
+      padding: 10px 15px;
+      border-radius: 4px;
       text-decoration: none;
     }
-
     footer {
-      text-align: center;
       padding: 20px;
-      background-color: #fff;
-      margin-top: 40px;
       font-size: 14px;
+      color: #888;
     }
   </style>
 </head>
@@ -95,34 +90,37 @@
   <header>
     <h1>Elionai Brand 🌟</h1>
     <p>Faith-based designs — tees, home goods, and more.</p>
-    <div class="buttons">
-      <a href="https://cash.app/$PromiseScriven" class="cashapp" target="_blank">💸 Pay with Cash App</a>
-      <a href="https://www.redbubble.com/people/elionaibrand/shop" class="redbubble" target="_blank">🛍️ Shop Elionai on Redbubble</a>
+    <div class="button-container">
+      <a class="button cashapp" href="https://cash.app/$elionaibrand" target="_blank">💸 Pay with Cash App</a>
+      <a class="button redbubble" href="https://www.redbubble.com/people/elionaibrand" target="_blank">🛍️ Shop Elionai on Redbubble</a>
     </div>
   </header>
 
-  <section class="product-grid">
-    <div class="product">
-      <img src="https://i.imgur.com/FlcmJGI.png" alt="Elionai Shirt 1">
-      <h3>James 1:20 Classic Tee</h3>
-      <a href="https://www.redbubble.com/i/t-shirt/Elionai-Christian-Lion-Design-by-elionaibrand/1700000000" target="_blank">View Product</a>
+  <section class="products">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="https://elionaibrand.github.io/assets/shirt1.jpg" alt="Elionai Tee 1">
+      <div class="product-title">James 1:20 Classic Tee</div>
+      <a class="product-link" href="https://www.redbubble.com/i/t-shirt/James-1-20-by-elionaibrand/161891550.WFLAH" target="_blank">View Product</a>
     </div>
 
-    <div class="product">
-      <img src="https://i.imgur.com/y2Qyy9F.png" alt="Elionai Shirt 2">
-      <h3>James 1:20 Contrast Tee</h3>
-      <a href="https://www.redbubble.com/i/t-shirt/Elionai-Christian-Lion-Design-by-elionaibrand/1700000001" target="_blank">View Product</a>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="https://elionaibrand.github.io/assets/shirt2.jpg" alt="Elionai Tee 2">
+      <div class="product-title">James 1:20 Contrast Tee</div>
+      <a class="product-link" href="https://www.redbubble.com/i/t-shirt/James-1-20-by-elionaibrand/161892088.WFLAH" target="_blank">View Product</a>
     </div>
 
-    <div class="product">
-      <img src="https://i.imgur.com/1PTOp9F.png" alt="Modern Star Blanket">
-      <h3>Modern Star Throw Blanket</h3>
-      <a href="https://www.redbubble.com/i/throw-blanket/Modern-Star-Grid-by-elionaibrand/1700000002" target="_blank">View Product</a>
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="https://elionaibrand.github.io/assets/blanket.jpg" alt="Throw Blanket">
+      <div class="product-title">Modern Star Throw Blanket</div>
+      <a class="product-link" href="https://www.redbubble.com/i/throw-blanket/Modern-Stars-by-elionaibrand/161892422.E40HW" target="_blank">View Product</a>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Elionai Brand. Powered by GitHub Pages + Redbubble.
+    &copy; 2025 Elionai Brand. All rights reserved.
   </footer>
 
 </body>
