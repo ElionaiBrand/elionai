@@ -3,85 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elionai Brand 🌟</title>
+  <title>Elionai Brand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background: #f4f4f4;
+      color: #333;
     }
+
     header {
-      background: #fff;
-      padding: 30px 20px 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ddd;
     }
-    h1 {
-      font-size: 36px;
+
+    header h1 {
       margin: 0;
+      font-size: 2em;
     }
-    p {
-      font-size: 18px;
-      margin-top: 10px;
+
+    .subheader {
+      color: #777;
+      font-size: 1em;
     }
-    .button-container {
-      margin-top: 20px;
+
+    .button-group {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
     }
+
     .button {
-      display: inline-block;
-      margin: 10px;
+      background-color: #ff3b3b;
+      color: white;
+      border: none;
       padding: 12px 24px;
       font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
+      cursor: pointer;
+      border-radius: 6px;
       text-decoration: none;
-      color: white;
+      transition: background 0.3s;
     }
-    .cashapp {
-      background-color: #00d632;
+
+    .button.green {
+      background-color: #28c641;
     }
-    .redbubble {
-      background-color: #e60023;
+
+    .button:hover {
+      opacity: 0.9;
     }
+
     .products {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 40px;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
       padding: 20px;
     }
-    .product-card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 300px;
-      margin: 20px;
-      padding: 15px;
-    }
+
     .product-card img {
       width: 100%;
       height: auto;
-      border-radius: 5px;
+      border-radius: 8px;
     }
+
     .product-title {
       font-weight: bold;
-      margin: 15px 0 5px;
+      margin: 10px 0 5px;
     }
-    .product-link {
-      display: inline-block;
-      margin-top: 10px;
+
+    .product-desc {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .view-button {
       background-color: #333;
       color: white;
-      padding: 10px 15px;
-      border-radius: 4px;
+      border: none;
+      padding: 10px 20px;
       text-decoration: none;
-    }
-    footer {
-      padding: 20px;
       font-size: 14px;
-      color: #888;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    @media (max-width: 600px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -89,39 +115,38 @@
 
   <header>
     <h1>Elionai Brand 🌟</h1>
-    <p>Faith-based designs — tees, home goods, and more.</p>
-    <div class="button-container">
-      <a class="button cashapp" href="https://cash.app/$elionaibrand" target="_blank">💸 Pay with Cash App</a>
-      <a class="button redbubble" href="https://www.redbubble.com/people/elionaibrand" target="_blank">🛍️ Shop Elionai on Redbubble</a>
+    <p class="subheader">Faith-based apparel and home goods – uplifting, dope, and inspired by James 1:20</p>
+    <div class="button-group">
+      <a class="button green" href="https://cash.app/$YourCashTag">Pay with Cash App</a>
+      <a class="button" href="https://www.redbubble.com/people/elionaibrand/shop">Shop Elionai on Redbubble</a>
     </div>
   </header>
 
   <section class="products">
     <!-- Product 1 -->
     <div class="product-card">
-      <img src="https://elionaibrand.github.io/assets/shirt1.jpg" alt="Elionai Tee 1">
-      <div class="product-title">James 1:20 Classic Tee</div>
-      <a class="product-link" href="https://www.redbubble.com/i/t-shirt/James-1-20-by-elionaibrand/161891550.WFLAH" target="_blank">View Product</a>
+      <img src="https://elionaibrand.github.io/products/tee1.jpg" alt="Elionai Tee 1">
+      <div class="product-title">Elionai Tee 1</div>
+      <div class="product-desc">James 1:20 Classic Tee</div>
+      <a class="view-button" href="https://www.redbubble.com/shop/ap/xyz1">View Product</a>
     </div>
 
     <!-- Product 2 -->
     <div class="product-card">
-      <img src="https://elionaibrand.github.io/assets/shirt2.jpg" alt="Elionai Tee 2">
-      <div class="product-title">James 1:20 Contrast Tee</div>
-      <a class="product-link" href="https://www.redbubble.com/i/t-shirt/James-1-20-by-elionaibrand/161892088.WFLAH" target="_blank">View Product</a>
+      <img src="https://elionaibrand.github.io/products/tee2.jpg" alt="Elionai Tee 2">
+      <div class="product-title">Elionai Tee 2</div>
+      <div class="product-desc">James 1:20 Contrast Tee</div>
+      <a class="view-button" href="https://www.redbubble.com/shop/ap/xyz2">View Product</a>
     </div>
 
     <!-- Product 3 -->
     <div class="product-card">
-      <img src="https://elionaibrand.github.io/assets/blanket.jpg" alt="Throw Blanket">
-      <div class="product-title">Modern Star Throw Blanket</div>
-      <a class="product-link" href="https://www.redbubble.com/i/throw-blanket/Modern-Stars-by-elionaibrand/161892422.E40HW" target="_blank">View Product</a>
+      <img src="https://elionaibrand.github.io/products/blanket1.jpg" alt="Throw Blanket">
+      <div class="product-title">Modern Star Blanket</div>
+      <div class="product-desc">Cozy fleece blanket with star pattern</div>
+      <a class="view-button" href="https://www.redbubble.com/shop/ap/xyz3">View Product</a>
     </div>
   </section>
-
-  <footer>
-    &copy; 2025 Elionai Brand. All rights reserved.
-  </footer>
 
 </body>
 </html>
